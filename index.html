@@ -4,14 +4,16 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦</title>
-
+<title>VIERNES 24 DE JULIO DEL 2026 - CARTA (CAP XX)</title>
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 
@@ -22,136 +24,304 @@ box-sizing:border-box;
 }
 
 body{
-background:radial-gradient(circle at top,#352519 0%,#1f160f 45%,#130e0a 100%);
-font-family:'Cormorant Garamond',serif;
-display:flex;
-justify-content:center;
-align-items:center;
+
+background:
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
+
 min-height:100vh;
-padding:45px;
+
+font-family:'Cormorant Garamond',serif;
+
+padding:60px 20px;
+
+overflow-x:hidden;
+
 }
 
-.book-page{
-position:relative;
-width:min(900px,100%);
-padding:70px 70px 130px;
-background:linear-gradient(180deg,#fcf7eb,#f6ecd9,#efe3cc);
-border:2px solid #c8ae7b;
-box-shadow:0 0 65px rgba(0,0,0,.55), inset 0 0 90px rgba(124,95,56,.12);
-overflow:hidden;
-}
+body::before{
 
-.book-page::before{
 content:"";
-position:absolute;
-top:18px;
-left:18px;
-right:18px;
-bottom:18px;
-border:1px solid rgba(149,112,62,.35);
+
+position:fixed;
+
+inset:0;
+
+background:
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
+
+opacity:.35;
+
+pointer-events:none;
+
 }
 
-.book-page::after{
-content:"❦";
-position:absolute;
-top:28px;
-right:32px;
-font-size:28px;
-color:#b89d68;
-opacity:.45;
+.book{
+
+max-width:950px;
+
+margin:auto;
+
+background:#4b2816;
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.65);
+
+border:6px solid #8f693d;
+
+position:relative;
+
 }
 
-.ornament{
+.cover-title{
+
 text-align:center;
-font-size:24px;
-letter-spacing:8px;
-color:#8d6842;
-margin-bottom:25px;
-}
 
-.book-title{
-text-align:center;
-font-size:18px;
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+color:#f7d98d;
+
 letter-spacing:3px;
-text-transform:uppercase;
-color:#694b2b;
-margin-bottom:18px;
+
+text-shadow:
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
+
+margin-bottom:22px;
+
 }
 
-.chapter{
+.page{
+
+background:
+linear-gradient(#f9f0d9,#efe1bf);
+
+border-radius:10px;
+
+padding:65px;
+
+position:relative;
+
+box-shadow:
+inset 0 0 30px rgba(0,0,0,.12);
+
+}
+
+.page::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+
+background-size:18px 18px;
+
+opacity:.55;
+
+pointer-events:none;
+
+}
+
+.corner{
+
+position:absolute;
+
+font-size:44px;
+
+color:#b08a45;
+
+opacity:.7;
+
+}
+
+.c1{top:15px;left:22px;}
+.c2{top:15px;right:22px;transform:rotate(90deg);}
+.c3{bottom:15px;left:22px;transform:rotate(-90deg);}
+.c4{bottom:15px;right:22px;transform:rotate(180deg);}
+
+.header{
+
 text-align:center;
-font-size:34px;
-font-weight:600;
-letter-spacing:3px;
-color:#4d3520;
-margin-bottom:12px;
+
+margin-bottom:55px;
+
+}
+
+.header h1{
+
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+line-height:1.5;
+
+color:#5b3213;
+
+margin-bottom:22px;
+
 }
 
 .date{
-text-align:center;
-font-size:17px;
+
+font-size:1rem;
+
+color:#7b5c2e;
+
 letter-spacing:1px;
-color:#7c5d37;
-margin-bottom:50px;
+
 }
 
-.content{
-border:1px dashed rgba(150,113,63,.45);
-background:rgba(255,255,255,.12);
-padding:45px 35px;
-text-align:center;
-line-height:2;
-font-size:22px;
-font-style:italic;
-color:#5a4127;
-}
+.greeting{
 
-.content strong{
-font-size:24px;
-font-style:normal;
-}
-
-#countdown{
 margin-top:35px;
-font-size:42px;
-font-weight:bold;
-letter-spacing:4px;
-color:#7a2d2d;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:3rem;
+
+color:#7b4323;
+
+margin-bottom:28px;
+
 }
 
-.count-text{
-margin-top:18px;
-font-size:18px;
-font-style:normal;
-color:#6d5130;
+p{
+
+font-size:1.35rem;
+
+line-height:2.05;
+
+text-align:justify;
+
+color:#4d3520;
+
+margin-bottom:22px;
+
 }
 
-.status{
-margin-top:45px;
+.first::first-letter{
+
+font-size:5rem;
+
+float:left;
+
+line-height:.9;
+
+padding-right:10px;
+
+font-family:'Cinzel',serif;
+
+color:#8d5a2d;
+
+}
+
+strong{
+
+font-weight:700;
+
+}
+
+.divider{
+
 text-align:center;
-font-size:18px;
-line-height:1.9;
+
+font-size:26px;
+
+margin:35px 0;
+
+color:#9b7643;
+
+}
+
+.page-turn{
+
+margin:55px auto 25px;
+
+text-align:center;
+
+}
+
+.page-turn-text{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.25rem;
+
+color:#7a5b39;
+
+line-height:1.8;
+
+margin-bottom:28px;
+
 font-style:italic;
-color:#6b4d2d;
+
 }
 
-.seal{
-margin:55px auto 0;
-width:78px;
-height:78px;
-border-radius:50%;
-background:radial-gradient(circle at 30% 30%,#a43d3d,#6d1919 70%);
-border:4px solid #d5b37a;
-box-shadow:0 8px 15px rgba(0,0,0,.25), inset 0 0 12px rgba(255,255,255,.15);
-}
+.page-corner{
 
-.page-number{
-position:absolute;
-bottom:28px;
-right:42px;
-font-size:17px;
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:170px;
+
+height:70px;
+
+background:linear-gradient(145deg,#f8f0dc,#ead8b3);
+
+border:2px solid #c9a36b;
+
+text-decoration:none;
+
+color:#6b4725;
+
+font-family:'Cinzel',serif;
+
+font-size:.9rem;
+
 letter-spacing:2px;
-color:#765737;
+
+clip-path:polygon(0 0,100% 0,100% 75%,82% 100%,0 100%);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.18);
+
+transition:.35s;
+
+}
+
+.page-corner:hover{
+
+transform:translateY(-5px) rotate(-2deg);
+
+box-shadow:
+0 18px 35px rgba(0,0,0,.28);
+
+}
+
+.page-corner span{
+
+padding:0 12px;
+
+text-align:center;
+
 }
 
 </style>
@@ -160,51 +330,386 @@ color:#765737;
 
 <body>
 
-<div class="book-page">
+<div class="book">
 
-<div class="ornament">
-✦ ❦ ✦ ❦ ✦ ❦ ✦
-</div>
+<div class="cover-title">
 
-<div class="book-title">
 ✦ Donde Siempre Vuelve Mi Corazón ✦
+
 </div>
 
-<div class="chapter">
-Capítulo XXI
-</div>
+<div class="page">
 
-<div class="date">
-Sábado 25 de julio de 2026 • Noche
-</div>
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
 
-<div class="content">
+<div class="header">
 
-<strong>
-La tinta ya conoce el destino de la próxima página; solo espera que el tiempo le conceda el honor de revelarlo...
-</strong>
+<h1>
+
+<strong>CAPÍTULO XX</strong>
 
 <br><br>
 
-Muy pronto este antiguo libro volverá a abrir sus hojas para guardar un nuevo recuerdo entre las páginas donde siempre vuelve el corazón.
+<strong>
 
-<div id="countdown">
-00:00:00
+DONDE LA ESPERANZA ENCENDIÓ UNA LÁMPARA PARA ESPERARTE HASTA EL AMANECER
+
+</strong>
+
+</h1>
+
+<div class="date">
+
+<strong>Viernes, 24 de julio del 2026 – Noche</strong>
+
 </div>
 
-<div class="count-text">
-Cada latido nos acerca al nacimiento de un nuevo capítulo.
 </div>
 
+<div class="greeting">
+
+MI CONSTELACIÓN DONDE DESCANSAN TODOS MIS MAÑANAS:
 </div>
 
-<div class="status">
-✦ Mientras el reloj avanza, este libro continúa escribiendo en silencio la historia que aún está por descubrirse. ✦
+<p class="first">
+
+Esta noche el mundo parece guardar un silencio diferente. Quizá sea porque mañana nos espera uno de esos días que muchos recuerdan durante años, o quizá porque el destino quiso regalarnos esta última noche antes de una nueva etapa. Me habría encantado que hoy hubiera sido distinto, que hubiéramos podido salir, caminar un poco, tomarnos de la mano y despedir este día con una sonrisa frente a frente. Pero incluso cuando los planes cambian, mi corazón siempre encuentra el camino para llegar hasta ti.
+
+</p>
+
+<p>
+
+No voy a mentirte: siento un poco de nervios por las ICFES. Es inevitable. Sin embargo, hay algo que me da una paz inmensa, y es saber que todo saldrá bien. He hecho lo que he podido, he dado lo mejor de mí y mañana simplemente iré con la tranquilidad de intentarlo con todo mi corazón.
+
+</p>
+
+<p>
+
+Lo curioso es que, mientras todos pensarían que mi mayor preocupación soy yo, la verdad es completamente distinta. Mi pensamiento más insistente eres tú. Me pregunto cómo estarás, si dormirás bien esta noche, si mañana desayunarás con calma, si llegarás tranquila, si sonreirás aunque los nervios quieran hacerte compañía. Me importa mucho más saber que tú estés bien que cualquier resultado que pueda obtener.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+Puede que el destino decida ponerte junto a varios compañeros conocidos y que a mí me toque compartir el salón únicamente con personas desconocidas. Y, ¿sabes qué? Eso no cambia absolutamente nada. Porque aunque la distancia nos separe por unas horas y estemos rodeados de personas diferentes, mi corazón seguirá sentado justo al lado del tuyo. Allí donde tú estés, allí también estará una parte de mí deseándote suerte en silencio.
+
+</p>
+
+<p>
+
+Solo quiero pedirte una promesa para mañana. Si en algún momento tenemos la oportunidad de escribirnos, aunque sea un instante; si existe un pequeño espacio para escuchar nuestras voces en una llamada, aunque sea breve... prométeme que lo haremos. No importa si estás acompañada, si hay compañeros a tu lado o si el tiempo parece demasiado corto. Bastará con saber que, entre todo lo que ocurra durante el día, seguimos encontrando un momento para recordarnos que nunca caminamos solos.
+
+</p>
+
+<p>
+
+Porque ese es nuestro amor: un refugio que siempre encuentra la manera de abrir sus puertas, incluso cuando el reloj corre deprisa y el mundo parece distraernos.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+Esta noche quiero que descanses con el corazón ligero. Cierra los ojos sabiendo que alguien, en algún lugar de esta misma ciudad, está pidiendo en silencio que mañana todo te salga maravilloso. Que respondas cada pregunta con confianza, que los nervios se conviertan en fortaleza y que, al terminar el examen, puedas sonreír con esa luz que tanto amo.
+
+</p>
+
+<p>
+
+Y cuando el día termine, sin importar cómo ha esto: nunca será un examen el que determine el inmenso valor de la mujer extraordinaria que eres. Yo seguiré sintiéndome profundamente orgulloso de ti, porque lo que admiro de ti no cabe en ninguna hoja de respuestas.
+
+</p>
+
+<p>
+
+Descansa, mi Constelación donde Descansan Todos mis Mañanas. Mañana el mundo nos pondrá a prueba por unas horas, pero nuestro amor seguirá aprobando cada día con la calificación más hermosa: permanecer juntos, creyendo el uno en el otro, incluso cuando no podamos vernos.
+
+</p>
+
+<p>
+
+Porque, al final de todo, lo único que realmente necesito es saber que tú estás bien. Siempre elegiré preocuparme primero por tu sonrisa antes que por cualquier logro mío, porque mi felicidad comienza exactamente donde empieza la tuya.
+
+</p>
+
+<p style="text-align:center;">
+
+<strong>
+
+Con todo el amor que existe en mi alma, con toda la esperanza puesta en el mañana y con la certeza de que ningún examen podrá ser más grande que el inmenso amor que siento por ti.
+
+<br><br>
+
+Te amo hoy, te amaré mañana y seguiré amándote mucho después de que esta noche se convierta en un recuerdo eterno, mi Constelación donde Descansan Todos mis Mañanas. ❤️
+
+</strong>
+
+</p>
+
+
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
+
+<style>
+
+/*==========================
+GRABADO FINAL
+==========================*/
+
+.book-quote{
+
+margin:0 auto 55px;
+max-width:760px;
+padding:28px 36px;
+
+border:2px solid rgba(176,138,69,.45);
+border-radius:10px;
+
+background:rgba(255,248,228,.45);
+
+position:relative;
+
+}
+
+.book-quote::before{
+
+content:"❦";
+
+position:absolute;
+
+top:-18px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:#efe1bf;
+
+padding:0 14px;
+
+font-size:26px;
+
+color:#9b7643;
+
+}
+
+.book-quote p{
+
+margin:0;
+
+text-align:center;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#8b3dff;
+
+font-family:'Cormorant Garamond',serif;
+
+text-shadow:
+0 0 5px rgba(171,92,255,.45),
+0 0 10px rgba(171,92,255,.35),
+0 0 18px rgba(171,92,255,.28);
+
+</style>
+
+    
+<div class="book-quote">
+
+<p>
+
+<strong>
+
+El amor verdadero también se demuestra en las noches como esta: cuando dos corazones se preparan para enfrentar caminos distintos durante unas horas, pero siguen latiendo con la misma fuerza el uno por el otro. Porque amar no es caminar siempre de la mano; es saber que, aun separados por un salón, por un examen o por el silencio, existe un lugar donde nuestras almas jamás dejan de encontrarse.
+
+<br><br>
+
+✨ <span style="font-size:1.65rem;">VALERIA PETRO VILLAZÓN</span> ❤️
+
+</strong>
+
+</p>
 </div>
 
-<div class="seal"></div>
+<style>
 
-  
+/*=========================================
+SELLO DE CERA
+=========================================*/
+
+.seal-container{
+
+display:flex;
+
+justify-content:center;
+
+margin:45px 0 15px;
+
+}
+
+.wax-seal{
+
+width:165px;
+height:165px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
+background:
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+border:5px solid #f2d89d;
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
+
+transition:.35s ease;
+
+}
+
+.wax-seal:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+}
+
+.ribbon{
+
+width:6px;
+
+height:95px;
+
+background:linear-gradient(#b3884d,#f4dca6,#b3884d);
+
+margin:0 auto;
+
+border-radius:5px;
+
+}
+
+.end-message{
+
+margin-top:28px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.3rem;
+
+color:#7b4323;
+
+}
+
+.page-number{
+
+margin-top:40px;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:.95rem;
+
+letter-spacing:5px;
+
+color:#9a7742;
+
+}
+
+</style>
+
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Viernes-24-de-julio-del-2026---poema/">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
+
+</div>
+
+<div class="page-turn">
+
+<p class="page-turn-text">
+
+<strong>
+
+La historia continúa, porque cada amanecer junto a ti merece convertirse en una nueva página de nuestro amor.
+
+</strong>
+
+</p>
+
+<a href="https://j8753741-eng.github.io/S-bado-25-de-julio-del-2026---carta-cap-XXI-/"
+class="page-corner">
+
+<span>
+
+✦ Pasar la página ✦
+
+</span>
+
+</a>
+
+</div>
+
+<div class="ribbon"></div>
+
+<div class="end-message">
+
+<strong>
+
+No importa dónde despierte el mañana; mi corazón siempre encontrará el camino para volver hasta ti.
+
+</strong>
+
+</div>
+
 <div class="page-number">
 
 ❦ &nbsp; XXI &nbsp; ❦
@@ -213,54 +718,10 @@ Cada latido nos acerca al nacimiento de un nuevo capítulo.
 
 </div>
 
+</div>
 <script>
-
-const fechaObjetivo = new Date("2026-07-25T21:30:00");
-
-function actualizarContador(){
-
-    const ahora = new Date();
-
-    const diferencia = fechaObjetivo.getTime() - ahora.getTime();
-
-    if(diferencia <= 0){
-
-        document.getElementById("countdown").innerHTML = "✦ Ya disponible ✦";
-        return;
-
-    }
-
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-    let texto = "";
-
-    if(dias > 0){
-
-        texto += String(dias).padStart(2,"0") + "d ";
-
-    }
-
-    texto +=
-        String(horas).padStart(2,"0") + ":" +
-        String(minutos).padStart(2,"0") + ":" +
-        String(segundos).padStart(2,"0");
-
-    document.getElementById("countdown").textContent = texto;
-
-}
-
-actualizarContador();
-
-setInterval(actualizarContador,1000);
-
+localStorage.setItem("ultimoCapitulo", window.location.href);
 </script>
-
 </body>
 
-</html>
+  </html>
